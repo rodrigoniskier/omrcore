@@ -1,0 +1,10 @@
+{
+  "name": "OMR Exam Grader",
+  "description": "Grading application for multiple-choice exams using mobile camera and Gemini AI for optical mark recognition.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
