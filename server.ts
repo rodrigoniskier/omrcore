@@ -12,7 +12,7 @@ let ai: GoogleGenAI | null = null;
 
 function getAiClient() {
   if (!ai) {
-    const key = process.env.GEMINI_API_KEY;
+    const key = process.env.GEMINI_API_KEY || "AIzaSyAiaCkCwW64XHOJQZwCjwgdGZq1a9F68kM";
     if (!key) {
       throw new Error('GEMINI_API_KEY environment variable is required');
     }
@@ -48,7 +48,7 @@ app.post('/api/parse-key', upload.single('file'), async (req, res) => {
     const mimeType = req.file.mimetype;
     
     const response = await aiClient.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-3.5-flash',
       contents: [
         {
           role: 'user',
@@ -95,7 +95,7 @@ app.post('/api/evaluate-exam', upload.single('file'), async (req, res) => {
     const mimeType = req.file.mimetype;
     
     const response = await aiClient.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-3.5-flash',
       contents: [
         {
           role: 'user',
