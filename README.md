@@ -1,5 +1,8 @@
 # OMR Core
 
+> **Status:** projeto em stand-by. O protótipo foi preservado para possível retomada, mas não integra atualmente o portfólio principal nem deve ser interpretado como produto validado em uso.
+
+
 ### Correção digital de gabaritos a partir de fotos e arquivos em lote
 
 **OMR Core** é uma aplicação web para simplificar o fluxo de correção de provas objetivas. O usuário configura um gabarito, envia imagens ou PDFs das folhas de resposta e acompanha o processamento em lote em uma interface única.
